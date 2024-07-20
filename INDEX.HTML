@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Css/style.css">
+<style>
+  .copy{
+      bottom: 0px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      color: white;
+    margin-bottom: 20px;
+    }
+    .copy a{
+      text-decoration: none;
+      color: #ff7200;
+      font-weight: bold;
+    }
+</style>
+</head>
+<body>
+  <div class="logo">
+    <h1>MAHI Tech</h1>
+    <h3>ማሒ ፖርቲፎሎዮ ወየብ ሳይት</h3>
+  </div>
+<div class="navbar" id="mynavbar">
+
+  <a href="#home">HOME</a>
+  <a href="#news">DESIGN</a>
+  <div class="dropdown">
+    <button class="dropbtn">TUTORIALS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-list">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JAVASCRIPT</a>
+      <a href="#">PHP</a>
+      <a href="#">MYSQL</a>
+      <a href="#">REACT</a>
+    </div>
+  </div> 
+  <a href="#contact">CONTACT</a>
+  <a href="#about">ABOUT</a>
+  <a href="#about" class="ri">LOGIN</a>
+  <a href="#about" class="ri">SIGNUP</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="cont">
+  <h1>RESPONSIVE WEBSITE <br> <span>DESIGN TECHNOLOGY</span></h1>
+  <p class="para"> <p> Web design courses cover a variety of topics essential for creating visually appealing and user friendly websites. 
+    <br>These include fundamental design principles of HTML CSS and JavaScript for front-end development .</p>
+
+  <button class="learn"><a href="#">Start Now</a></button>
+</div>
+<div class="copy">
+copyright &copy; 2024-<?php echo date("Y");?> <a href="#">MAHI TECH</a> All rights reserved
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("mynavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+</body>
+
+
+</html>
